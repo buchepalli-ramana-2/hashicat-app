@@ -11,8 +11,8 @@ provider "aws" {
   region = var.region
 }
 
-module "s3-bucket" {
-  source              = "cloudposse/s3-bucket/aws"
+module "s3_bucket" {
+  source              = "app.terraform.io/mm-tfc-ramana-org/s3-bucket/aws"
   version             = "3.1.0"
   s3_object_ownership = "BucketOwnerEnforced"
 }
